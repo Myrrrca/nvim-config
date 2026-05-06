@@ -13,6 +13,7 @@ require('mini.files').setup({
         -- Width of focused window
         width_focus = 55,
         -- Width of preview window
+        -- 133 because this is exactly how much space preview + first window takes on my screen
         width_preview = 133,
     },
     mappings = {

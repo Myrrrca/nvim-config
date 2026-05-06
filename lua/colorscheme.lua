@@ -3,10 +3,6 @@
 -- ---------------------------------------------------------------------
 vim.cmd("colorscheme tokyonight")
 
--- using highlighting for cursor
-vim.opt.cursorcolumn = true
-vim.opt.cursorline = true
-
 -- setting ColorColumn highlight group for using it in .md files
 vim.api.nvim_set_hl(0, "ColorColumn", { link = "CursorColumn" })
 -- setting Folded highlight group just in case
