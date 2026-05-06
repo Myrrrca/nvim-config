@@ -1,3 +1,9 @@
+-- Enabling smart splits and resize
+-- <g + h/j/k/l>        -- split (create new split if theres none)
+-- <gm + h/j/k/l>       -- mirror (create new and copy) current buffer
+-- <gp + h/j/k/l>       -- pull (swap) current buffer with another one 
+-- <Shift + arrow_key>  -- resize by 4 columns
+
 local whichkey = require('which-key')
 local resize = require('custom.windows.resize')
 

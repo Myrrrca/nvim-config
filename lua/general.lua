@@ -1,9 +1,10 @@
 require('custom.windows.windows')
+require('custom.highlighting')
 
 -- Line numbers
 vim.opt.number = true
 vim.opt.relativenumber = true
--- makes single line of numbers
+-- enables single line of numbers
 vim.o.numberwidth = 2
 
 -- Tabulation
@@ -42,7 +43,7 @@ vim.api.nvim_create_autocmd('TextYankPost', {
     end,
 })
 -- disables highlighting for search on <C-H> 
-vim.keymap.set("n", "<C-H>", "<cmd>noh<CR>", { silent = true, desc = "no search Highlight" })
+-- vim.keymap.set("n", "<C-H>", "<cmd>noh<CR>", { silent = true, desc = "no search Highlight" })
 
 -- Search
 -- enables fuzzy matching of arguments for :h
