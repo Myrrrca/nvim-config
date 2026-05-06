@@ -1,5 +1,5 @@
 -- !!!!!
--- This file should be 'required' in init.lua before any .setup calls from any plugin
+-- This file should be 'required' in init.lua before any .setup() calls from any plugin
 -- !!!!!
 
 -- Set up leader
