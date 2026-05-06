@@ -1,7 +1,7 @@
 ------------------------------------------------------------------------
 -- Enables mini.statusline
 ------------------------------------------------------------------------
-require('mini.statusline').setup({})
+require('mini.statusline').setup()
 
 -- hides -- INSERT -- or similar modes in cmd 
 vim.cmd("set noshowmode")

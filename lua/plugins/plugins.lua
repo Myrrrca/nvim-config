@@ -7,3 +7,8 @@ vim.pack.add({"https://github.com/folke/tokyonight.nvim.git"})
 -- mini.nvim
 ------------------------------------------------------------------------
 vim.pack.add({"https://github.com/nvim-mini/mini.nvim.git"})
+
+------------------------------------------------------------------------
+-- which-key.nvim
+------------------------------------------------------------------------
+vim.pack.add({"https://github.com/folke/which-key.nvim"})

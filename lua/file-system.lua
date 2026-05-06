@@ -27,3 +27,10 @@ require('mini.files').setup({
 
 -- open mini.files on "-"
 vim.keymap.set("n", "-", "<CMD>lua MiniFiles.open()<CR>", { desc = "Open parent directory" })
+
+-- show preview of the files always from the top of the file
+vim.api.nvim_create_autocmd("BufReadPost", {
+  callback = function()
+    vim.cmd('normal! g`"')
+  end,
+})

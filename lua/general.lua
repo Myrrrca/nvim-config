@@ -1,3 +1,5 @@
+require('custom.windows.windows')
+
 -- Line numbers
 vim.opt.number = true
 vim.opt.relativenumber = true
@@ -32,11 +34,19 @@ vim.keymap.set("n", "<leader><leader>x", "<cmd>restart<CR>")
 -- asks to confirm to save any changes before ':restart'  
 vim.opt.confirm = true
 
+-- Highlighting
+-- highlight selection on yank
+vim.api.nvim_create_autocmd('TextYankPost', {
+    callback = function()
+        vim.highlight.on_yank()
+    end,
+})
+-- disables highlighting for search on <C-H> 
+vim.keymap.set("n", "<C-H>", "<cmd>noh<CR>", { silent = true, desc = "no search Highlight" })
+
 -- Search
 -- enables fuzzy matching of arguments for :h
 vim.opt.wildoptions:append { 'fuzzy' }
--- disables highlighting for search on <C-H> 
-vim.keymap.set("n", "<C-H>", "<cmd>noh<CR>", { silent = true, desc = "no search Highlight" })
 -- enables incremental search
 vim.o.incsearch = true
 -- vim.opt.ignorecase = true
