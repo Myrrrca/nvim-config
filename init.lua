@@ -1,0 +1,7 @@
+require("plugins.plugins")
+require("entry")
+
+require("general")
+require("colorscheme")
+require("file-system")
+require("status-line")
