@@ -31,13 +31,13 @@ vim.keymap.set("n", "gj", function() win_move("j") end, { silent = true, desc = 
 
 -- Mirroring current window
 whichkey.add({ { "gm", group = "Go Mirror window" } })
-vim.keymap.set("n", "gmh", "gh<Del>gh",
-    { silent = true, remap = true, desc = "GO to the LEFT window mirroring the current window" })
-vim.keymap.set("n", "gml", "gl<Del>gl",
+vim.keymap.set("n", "gmh", "gh<Del>",
+   { silent = true, remap = true, desc = "GO to the LEFT window mirroring the current window" })
+vim.keymap.set("n", "gml", "gl<Del>",
     { silent = true, remap = true, desc = "GO to the RIGHT window mirroring the current window" })
-vim.keymap.set("n", "gmk", "gk<Del>gk",
+vim.keymap.set("n", "gmk", "gk<Del>",
     { silent = true, remap = true, desc = "GO to the ABOVE window mirroring the current window" })
-vim.keymap.set("n", "gmj", "gj<Del>gj",
+vim.keymap.set("n", "gmj", "gj<Del>",
     { silent = true, remap = true, desc = "GO to the BELOW window mirroring the current window" })
 
 -- Moving(pulling) current window

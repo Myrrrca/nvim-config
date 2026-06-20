@@ -1,6 +1,6 @@
 local M = {}
 
--- Making mini.files highlight modified files with a custom function  
+-- Making mini.files highlight modified files
 ----> 
 -- Track which files are modified
 local modified_files = {}

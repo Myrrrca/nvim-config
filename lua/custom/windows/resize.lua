@@ -1,4 +1,5 @@
 -- Functions for smart resize
+
 local M = {}
 
 vim.g.resize_count = vim.g.resize_count or 1
